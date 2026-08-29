@@ -1,0 +1,16 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { color: #17211b; background: #fbfcfb; }
+button, a, input, textarea, select { transition: all .18s ease; }
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 2px solid #4e8061; outline-offset: 2px; }
+.input { margin-top: .4rem; display: block; height: 2.75rem; width: 100%; border-radius: .75rem; border: 1px solid #e5e7eb; background: white; padding: 0 .8rem; font-size: .875rem; font-weight: 400; }
+.input:focus { border-color: #4e8061; outline: none; box-shadow: 0 0 0 3px rgba(78,128,97,.1); }
+textarea.input { height: auto; min-height: 6rem; padding-top: .65rem; resize: vertical; }
+@media print {
+  @page { size: A4; margin: 0; }
+  body { background: white !important; }
+  .no-print { display: none !important; }
+  .print-area { position: absolute !important; inset: 0 !important; width: 210mm !important; box-shadow: none !important; transform: none !important; }
+  .resume-section { break-inside: avoid; }
+}

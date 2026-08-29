@@ -1,0 +1,2 @@
+import Link from "next/link"; import { AuthForm } from "@/components/auth-form";
+export default function Login(){return <><h1 className="font-display text-4xl">Bentornato</h1><p className="mb-8 mt-2 text-sm text-gray-500">Accedi per continuare a lavorare sui tuoi curriculum.</p><AuthForm mode="login"/><p className="mt-7 text-center text-sm text-gray-500">Non hai un account? <Link href="/register" className="font-semibold text-sage-700">Registrati</Link></p></>}

@@ -1,0 +1,2 @@
+import Link from "next/link"; import { AuthForm } from "@/components/auth-form";
+export default function Register(){return <><h1 className="font-display text-4xl">Crea il tuo account</h1><p className="mb-8 mt-2 text-sm text-gray-500">Il tuo prossimo curriculum è a pochi minuti da qui.</p><AuthForm mode="register"/><p className="mt-7 text-center text-sm text-gray-500">Hai già un account? <Link href="/login" className="font-semibold text-sage-700">Accedi</Link></p></>}
